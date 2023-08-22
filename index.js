@@ -45,7 +45,7 @@ app.post('/api/upload', upload.single("file"), (req, res) => {
 export const db = mysql.createConnection({
   host: "127.0.0.1",
   user: "root",
-  port:3306,
+  port:"3306",
   password: "karthi@123",
   database: "social",
 });
