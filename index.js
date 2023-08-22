@@ -43,10 +43,11 @@ app.post('/api/upload', upload.single("file"), (req, res) => {
 
 // MYSQL CONNECTION
 export const db = mysql.createConnection({
-  host: process.env.HOST,
-  user: process.env.USER,
-  password: process.env.PASSWORD,
-  database: process.env.DATABASE,
+  host: "127.0.0.1",
+  user: "root",
+  port:3306,
+  password: "karthi@123",
+  database: "social",
 });
 
 db.connect((err) => {
